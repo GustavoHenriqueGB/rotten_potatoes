@@ -20,7 +20,7 @@ A aplicação foi construída seguindo o padrão arquitetural **MVC (Model-View-
 Siga os passos abaixo no terminal para rodar o projeto em seu ambiente local:
 
 ### 1. Pré-requisitos
-* **Ruby** (versão 3.x recomendada)
+* **Ruby** (versão 3.8 recomendada)
 * **Bundler**
 * **Rails**
 
