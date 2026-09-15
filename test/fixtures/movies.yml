@@ -1,0 +1,11 @@
+one:
+  title: "MyString"
+  rating: "G"
+  description: "MyText"
+  release_date: 2026-09-14
+
+two:
+  title: "MyString 2"
+  rating: "PG"
+  description: "MyText"
+  release_date: 2026-09-14
