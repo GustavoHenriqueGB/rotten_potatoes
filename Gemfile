@@ -67,3 +67,9 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+group :development, :test do
+  gem "cucumber-rails", require: false
+  gem "capybara"
+  gem "database_cleaner" # se necessário para limpar o banco entre testes
+end

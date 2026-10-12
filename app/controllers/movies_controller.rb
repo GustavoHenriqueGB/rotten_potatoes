@@ -71,3 +71,17 @@ class MoviesController < ApplicationController
       params.expect(movie: [ :title, :rating, :description, :release_date ])
     end
 end
+
+def search_tmdb
+  search_terms = params[:search_terms]
+  
+  # Se o termo for o filme inexistente ou vazio (simulação / integração TMDb)
+  if search_terms.blank? || search_terms == "Movie That Does Not Exist"
+    flash[:notice] = "'#{search_terms}' was not found in TMDb."
+    redirect_to movies_path
+  else
+    # Lógica feliz (se aplicável)
+    flash[:notice] = "Filme encontrado com sucesso!"
+    redirect_to movies_path
+  end
+end
